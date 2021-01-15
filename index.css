@@ -24,6 +24,11 @@
     cursor: pointer;
     float: right;
   }
+
+  .BoxErr, .fnameErr, .lnameErr, .ageErr, .selErr{
+    display: block;
+    text-align: center;
+  }
   
   input[type=submit]:hover {
     background-color: #45a049;

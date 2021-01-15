@@ -17,6 +17,7 @@
                     <div class="col-75">
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
                     </div>
+                    <span id="fnameErr" class="fnameErr"></span>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -25,6 +26,7 @@
                     <div class="col-75">
                         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                     </div>
+                    <span id="lnameErr" class="lnameErr"></span>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -33,6 +35,7 @@
                     <div class="col-75">
                         <input type="number" id="age" name="age" placeholder="Enter Age">
                     </div>
+                    <span id="ageErr" class="ageErr"></span>
                 </div>
                 <div class="row">
                     <div class="col-25">
@@ -40,28 +43,31 @@
                     </div>
                     <div class="col-75">
                         <select id="country" name="country">
+                        <option value="">Choose an Option</option>
                         <option value="India">India</option>
                         <option value="australia">Australia</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
                         </select>
                     </div>
+                    <span id="selErr" class="selErr"></span>
                 </div>
                 <div class="row">
+                    <span id="BoxErr" class="BoxErr"></span>
                     <input type="submit" id='btn' value="Submit">
                 </div>
             </form>
           </div>
 
-          <div>
-              <p id="demo"></p>
-          </div>
+
 
           <!-- <a>Show Table</a> -->
+          <br>
           <div id='tableDiv'>
             <table class="table">
                 <thead>
                     <tr>
+                        <th>Sr. No</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Age</th>
